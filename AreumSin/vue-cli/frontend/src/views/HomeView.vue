@@ -1,26 +1,26 @@
 <template>
   <div class="app">
-      <router-link :to="{ name: 'HomeView' }">
-        Home
-      </router-link>
-      <router-link :to="{ name: 'TestView' }">
-        Test
-      </router-link>
-      <router-link :to="{ name: 'BoardListPage' }">
-        BoardListPage
-      </router-link>
-      <router-link :to="{ name: 'Concave' }">
-        &nbsp;이것이 삼목이닷!&nbsp;
-      </router-link>
-      <router-link style="text-decoration: none;" :to="{ name: 'EventBusTestPage' }">
-        &nbsp;eventbus&nbsp;
-      </router-link>
-      <router-link style="text-decoration: none;" :to="{ name: 'ProductBoardListPage' }">
-        &nbsp;상품게시판(문제은행13번)&nbsp;
-      </router-link>
-      <router-link style="text-decoration: none;" :to="{ name: 'CoverFlowTestPage' }">
-        &nbsp;CoverFlowTestPage UI Test&nbsp;
-      </router-link>
+    <router-link :to="{ name: 'HomeView' }">
+      Home
+    </router-link>
+    <router-link :to="{ name: 'TestView' }">
+      Test
+    </router-link>
+    <router-link :to="{ name: 'BoardListPage' }">
+      BoardListPage
+    </router-link>
+    <router-link :to="{ name: 'Concave' }">
+      &nbsp;이것이 삼목이닷!&nbsp;
+    </router-link>
+    <router-link style="text-decoration: none;" :to="{ name: 'EventBusTestPage' }">
+      &nbsp;eventbus&nbsp;
+    </router-link>
+    <router-link style="text-decoration: none;" :to="{ name: 'ProductBoardListPage' }">
+      &nbsp;상품게시판(문제은행13번)&nbsp;
+    </router-link>
+    <router-link style="text-decoration: none;" :to="{ name: 'CoverFlowTestPage' }">
+      &nbsp;CoverFlowTestPage UI Test&nbsp;
+    </router-link>
     <router-link style="text-decoration: none;" :to="{ name: 'AwesomeSwiperTestPage' }">
       &nbsp;AwesomeSwiperTestPage
     </router-link>
@@ -42,6 +42,9 @@
     </router-link>
     <router-link style="text-decoration: none;" :to="{ name: 'LoginTestPage' }">
       &nbsp;LoginTestPage
+    </router-link>
+    <router-link style="text-decoration: none;" :to="{ name: 'JpaBoardListPage' }">
+      &nbsp;Jpa Board List&nbsp;
     </router-link>
 
   </div>
