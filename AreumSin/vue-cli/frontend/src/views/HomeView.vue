@@ -44,7 +44,10 @@
       &nbsp;LoginTestPage
     </router-link>
     <router-link style="text-decoration: none;" :to="{ name: 'JpaBoardListPage' }">
-      &nbsp;Jpa Board List&nbsp;
+      &nbsp;JpaBoardList&nbsp;
+    </router-link>
+    <router-link style="text-decoration: none;" :to="{ name: 'JpaMemberAuthTestPage' }">
+      &nbsp;LookBusinessMemberCheck
     </router-link>
 
   </div>

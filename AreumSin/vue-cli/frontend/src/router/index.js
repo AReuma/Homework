@@ -31,6 +31,9 @@ import JpaBoardReadPage from '@/views/jpaBoard/JpaBoardReadPage.vue'
 import JpaBoardModifyPage from '@/views/jpaBoard/JpaBoardModifyPage.vue'
 
 
+import JpaMemberAuthTestPage from '@/views/jpaMember/JpaMemberAuthTestPage.vue'
+
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -189,6 +192,16 @@ const routes = [
     name: 'JpaBoardModifyPage',
     components: {
       default: JpaBoardModifyPage
+    },
+    props: {
+      default: true
+    }
+  },
+  {
+    path: '/jpaMemberAuthTest',
+    name: 'JpaMemberAuthTestPage',
+    components: {
+      default: JpaMemberAuthTestPage
     },
     props: {
       default: true
