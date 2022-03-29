@@ -4,10 +4,13 @@ import {
     FETCH_PRODUCT_BOARD_LIST,
     FETCH_PRODUCT_BOARD,
     FETCH_JPA_BOARD_LIST,
-    FETCH_JPA_BOARD, FETCH_BUSINESS_MEMBER,
+    FETCH_JPA_BOARD,
+    FETCH_BUSINESS_MEMBER,
+    CRAWL_START
 } from './mutation-types'
 
 import axios from 'axios'
+import router from '@/router'
 // npm install axios --save-dev
 
 export default {
@@ -51,6 +54,16 @@ export default {
         return axios.get('http://localhost:7777/63th/jpaMember/checkBusiness')
             .then((res) => {
                 commit(FETCH_BUSINESS_MEMBER, res.data)
+            })
+    },
+    async crawlFind ({ commit }, category) {
+        axios.get('http://localhost:7777/64th/crawl/' + `${category}`)
+            .then(({ data }) => {
+                commit(CRAWL_START, data)
+
+                if (window.location.pathname !== '/daumNewsCrawl') {
+                    router.push('/daumNewsCrawl')
+                }
             })
     }
 }

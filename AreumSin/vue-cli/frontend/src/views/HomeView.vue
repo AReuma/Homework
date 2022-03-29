@@ -49,6 +49,9 @@
     <router-link style="text-decoration: none;" :to="{ name: 'JpaMemberAuthTestPage' }">
       &nbsp;LookBusinessMemberCheck
     </router-link>
+    <router-link style="text-decoration: none;" :to="{ name: 'DaumNewsCrawlerPage' }">
+      &nbsp;DaumNewsCrawlerPage
+    </router-link>
 
   </div>
 </template>
